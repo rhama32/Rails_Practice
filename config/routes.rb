@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get 'top' => 'homes#top'
   get 'about' => 'homes#about'
   
+  get 'lists/new'
+  post 'lists' => 'lists#create'  
 end
