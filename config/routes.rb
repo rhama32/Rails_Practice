@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   
   #asリストを付与することで、pass名を変更する
   #listとした場合、pass名はlistとなる。取得のURL自体はlists/1のようになる。
-  get 'lists/:id' => 'lists#show',as:'list'
- 
+  get 'lists/:id' => 'lists#show', as:'list'
+  get 'lists/:id/edit' => 'lists#edit', as:'edit_list'
+  patch 'lists/:id/' => 'lists#update', as:'update_list'
 end
