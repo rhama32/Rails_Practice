@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   get 'about' => 'homes#about'
   
   get 'lists/new'
-  post 'lists' => 'lists#create'  
+  post 'lists' => 'lists#create'
+  get 'lists' => 'lists#index'
+ 
 end

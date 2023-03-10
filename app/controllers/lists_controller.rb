@@ -11,6 +11,8 @@ class ListsController < ApplicationController
   end
   
   def index
+    #インスタンス変数
+    @lists = List.all
   end
   
   def show
