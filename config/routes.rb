@@ -13,5 +13,9 @@ Rails.application.routes.draw do
   get 'lists/new'
   post 'lists' => 'lists#create'
   get 'lists' => 'lists#index'
+  
+  #asリストを付与することで、pass名を変更する
+  #listとした場合、pass名はlistとなる。取得のURL自体はlists/1のようになる。
+  get 'lists/:id' => 'lists#show',as:'list'
  
 end
