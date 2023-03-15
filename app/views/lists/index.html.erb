@@ -1,12 +1,12 @@
-<h3>投稿一覧について</h3>
-<% @lists.each do |list| %>
-<p>タイトル</p>
-<span><%= link_to list.title, list_path(list) %></span>
-<p>画像</p>
-<% if list.image.attached? %>
-  <%= image_tag list.image, size:"100x100" %>
-<% else %>
-  <%= image_tag 'no_image', size:"100x100" %>
-<% end %>
+<!--<h3>投稿一覧について</h3>-->
+<!--<% @lists.each do |list| %>-->
+<!--<p>タイトル</p>-->
+<!--<span><%= link_to list.title, list_path(list) %></span>-->
+<!--<p>画像</p>-->
+<!--<% if list.image.attached? %>-->
+<!--  <%= image_tag list.image, size:"100x100" %>-->
+<!--<% else %>-->
+<!--  <%= image_tag 'no_image', size:"100x100" %>-->
+<!--<% end %>-->
 
-<% end %>
+<!--<% end %>-->
