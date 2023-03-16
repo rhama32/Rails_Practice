@@ -8,8 +8,8 @@
 
 <h3>画像</h3>
 <p><% if @list.image.attached? %></p>
-  <%= image_tag @list.image, size:"100x100" %>
+  <%= image_tag @list.image, size:"150x150" %>
 <% else %>
-  <%= image_tag 'no_image', size:"100x100" %>
+  <%= image_tag 'no_image', size:"150x150" %>
 <% end %>
 <%= link_to "削除", destroy_list_path(@list), method: :delete, "data-confirm" => "本当に削除しますか？"  %>
