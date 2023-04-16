@@ -22,6 +22,6 @@ Rails.application.routes.draw do
   patch 'lists/:id/' => 'lists#update', as:'update_list'
   delete 'lists/:id' => 'lists#destroy', as: 'destroy_list'
   
-  # devise_for :users
-  # root to: 'homes#top'
+  devise_for :users
+  root to: 'homes#top'
 end
